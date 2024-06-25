@@ -5,11 +5,11 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
     buttons: [
         {
-            label: 'Fetch my trading stats',
+            label: 'Check my DrakeRank',
         },
     ],
     image: {
-        src: `${NEXT_PUBLIC_URL}/api/og`,
+        src: `${NEXT_PUBLIC_URL}/top_5.png`,
         aspectRatio: '1:1',
     },
     postUrl: `${NEXT_PUBLIC_URL}/api/frame`,

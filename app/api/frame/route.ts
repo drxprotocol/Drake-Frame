@@ -13,7 +13,11 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         accountAddress = message.interactor.verified_accounts[0];
     }
 
-    console.debug(`message =>`, message);
+    console.debug(
+        `message =>`, message,
+        `isValid =>`, isValid,
+        `accountAddress =>`, accountAddress,
+    );
 
 
     return new NextResponse(
@@ -24,7 +28,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
                 },
             ],
             image: {
-                src: `${NEXT_PUBLIC_URL}/api/og?address=0xF8f3c7f3cC43bD2ac6Ece5ae552E5d8779cC54DA`,
+                src: `${NEXT_PUBLIC_URL}/api/og?address=${accountAddress}`,
                 aspectRatio: '1:1',
             },
             postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
