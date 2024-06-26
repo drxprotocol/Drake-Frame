@@ -11,9 +11,9 @@ export const fetchAccountData = async (address) => {
         impAddress: '',
         cmpAddress: '',
 
-        tradingPnl: '1314.52',
+        tradingPnl: '3547.98',
         volumeIn24: '',
-        volume: '15123.16',
+        volume: '314205.14',
 
         impEquity: '',
         impVolumeIn24: '',
@@ -24,14 +24,14 @@ export const fetchAccountData = async (address) => {
         cmpVolume: '',
 
         referralCode: '0bUg6uKX',
-        referredSize: 5,
+        referredSize: 1,
         referredAddress: [],
-        referredPnl: '1058.79',
+        referredPnl: '354.34',
 
-        feedbackBonus: 0.1,
+        feedbackBonus: 0,
 
-        finalPnl: '2610.64',
-        ranking: 20,
+        finalPnl: '3902.32',
+        ranking: 8,
 
         lastUpdatedTime: new Date().getTime(),
     };
@@ -61,7 +61,7 @@ export const GenerateFrameImg = ({accountData = {}}) => {
                 position: `absolute`,
                 top: `70px`,
                 left: `-210px`,
-                zIndex: `-1`,
+                zIndex: -1,
                 width: `1337`,
                 height: `1092px`,
                 backgroundImage: `url(${NEXT_PUBLIC_URL}/bg_1.svg)`,
@@ -70,7 +70,7 @@ export const GenerateFrameImg = ({accountData = {}}) => {
                 position: `absolute`,
                 top: `-450px`,
                 right: `-200px`,
-                zIndex: `-2`,
+                zIndex: -2,
                 width: `1354`,
                 height: `1373`,
                 backgroundImage: `url(${NEXT_PUBLIC_URL}/bg_2.svg)`,
