@@ -36,27 +36,6 @@ export const GenerateFrameImg = ({accountData = {}}) => {
             backgroundColor: '#0f172a',
             position: `relative`,
         }}>
-            <div style={{
-                position: `absolute`,
-                top: `70px`,
-                left: `-210px`,
-                zIndex: -1,
-                width: `1337`,
-                height: `1092px`,
-                backgroundImage: `url(${NEXT_PUBLIC_URL}/bg_1.svg)`,
-            }}></div>
-            <div style={{
-                position: `absolute`,
-                top: `-450px`,
-                right: `-200px`,
-                zIndex: -2,
-                width: `1354`,
-                height: `1373`,
-                backgroundImage: `url(${NEXT_PUBLIC_URL}/bg_2.svg)`,
-                opacity: 0.75,
-            }}></div>
-
-
             <div tw={`flex items-center justify-between w-full`}>
                 <img
                     width="261"
@@ -135,15 +114,6 @@ export const GenerateFrameImg = ({accountData = {}}) => {
                         }}>{`$${accountData.tradingPnl}`}</span>
                     </div>
 
-                    <div tw={`flex justify-between w-full`} style={{
-                        padding: `20px 0`,
-                        borderBottom: `1px solid #334155`,
-                    }}>
-                        <span>{`Trading Volume`}</span>
-                        <span style={{
-                            color: `#22c55e`,
-                        }}>{`$${accountData.volume}`}</span>
-                    </div>
 
 
                     <div tw={`flex justify-between w-full`} style={{
@@ -161,7 +131,7 @@ export const GenerateFrameImg = ({accountData = {}}) => {
                         <span>{`Total Referee TradingPnL`}</span>
                         <span style={{
                             color: `#22c55e`,
-                        }}>{`$${accountData.referredPnl}`}</span>
+                        }}>{`$${accountData.referredPnl || 0}`}</span>
                     </div>
 
 
