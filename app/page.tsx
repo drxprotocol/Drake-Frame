@@ -16,11 +16,11 @@ const frameMetadata = getFrameMetadata({
 });
 
 export const metadata: Metadata = {
-    title: 'Drake Frame',
-    description: 'Drake',
+    title: 'Drake Paper Trading Ranking Onchain Summer 2024',
+    description: 'Drake Exchange',
     openGraph: {
-        title: 'Drake Frame',
-        description: 'Drake',
+        title: 'Drake Paper Trading Ranking Onchain Summer 2024',
+        description: 'Drake Exchange',
         images: [`${NEXT_PUBLIC_URL}/park-1.png`],
     },
     other: {
